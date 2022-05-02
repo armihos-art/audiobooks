@@ -31,21 +31,21 @@ function createTrackItem(index,name,duration){
 var listAudio = [
   {
     name:"Чехов А. П. - Смерть чиновника",
-    file:"https://github.com/armihos-art/audiobooks/blob/b45b12a2d7b7e01640257dc99a6b52280e44a0e2/audiobooks/1.mp3",
+    file:"audiobooks/1.mp3",
     duration:"00:28",
-    image: "https://github.com/armihos-art/audiobooks/blob/b45b12a2d7b7e01640257dc99a6b52280e44a0e2/images/bg1.jpg"
+    image: "images/bg1.jpg"
   },
   {
     name:"Чехов А. П. - Лошадиные зубы",
     file:"https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3",
     duration:"05:53",
-    image: "https://github.com/armihos-art/audiobooks/blob/b45b12a2d7b7e01640257dc99a6b52280e44a0e2/images/bg2.jpg"
+    image: "images/bg2.jpg"
   },
   {
     name:"Чехов А. П. - Дачники",
-    file:"https://github.com/armihos-art/audiobooks/blob/b45b12a2d7b7e01640257dc99a6b52280e44a0e2/audiobooks/3.mp3",
+    file:"audiobooks/3.mp3",
     duration:"00:28",
-    image: "https://github.com/armihos-art/audiobooks/blob/b45b12a2d7b7e01640257dc99a6b52280e44a0e2/images/bg3.jpg"
+    image: "images/bg3.jpg"
   }
 ]
 
