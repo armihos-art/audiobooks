@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audiobook</title>
+    <link rel="stylesheet" href="styles/normolize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/player.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a062562745.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="content">
+        <div class="content-sidebar">
+            <button class="content-sidebar__button" type="button">
+                
+            </button>
+            
+            <ul class="content-sidebar__list">
+                <li class="content-sidebar__item">
+                   <a class="content-sidebar__link content-sidebar__wa" target="blank" href="#"></a> 
+                </li>
+                <li class="content-sidebar__item">
+                    <a class="content-sidebar__link content-sidebar__vk" target="blank" href="#"></a> 
+                 </li>
+                 <li class="content-sidebar__item">
+                    <a class="content-sidebar__link content-sidebar__tg" target="blank" href="#"></a> 
+                 </li>
+            </ul>
+        </div>
+        <header class="content-header">
+            <a class="content-header__logo"></a>
+            <nav>
+                <ul class="content-header__list">
+                    <li class="content-header__item"><a class="content-header__link" href="#">Главная</a></li>
+                    <li class="content-header__item"><label for="css-modal-checkbox" class="content-header__label">Справка</label></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="content-main">
+            <!-- Модальное окно --> 
+            <input class="css-modal" type="checkbox" id="css-modal-checkbox" />
+            <div class="cmc">		
+                <div class="cmt">
+                    <h3>Заголовок</h3>
+                    <p>Какой-то текст в большом или не очень большом количестве</p>
+                </div>
+                <label for="css-modal-checkbox" class="css-modal-close"></label>
+            </div>
+            <!-- Конец -->
+            <div class="content-main__bg">
+                <video autoplay loop muted class="bgvideo" id="bgvideo">
+                    <source src="/images/1.mp4" type="video/mp4"></source>
+                </video>
+                <h3>Заголовок</h3>
+                <p>Какой-то текст в большом или не очень большом количестве</p>
+            </div>
+            <div class="player-box">            
+                
+
+                <audio id="myAudio" ontimeupdate="onTimeUpdate()">
+                <!-- <source src="audio.ogg" type="audio/ogg"> -->
+                <source id="source-audio" src="" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+                
+                <div class="player-ctn">
+                <div class="player-image" id="player-image"></div>
+                <div class="infos-ctn">
+                    <div class="timer">00:00</div>
+                    <div class="title"></div>
+                    <div class="duration">00:00</div>
+                </div>
+                <div id="myProgress">
+                    <div id="myBar"></div>
+                </div>
+                <div class="btn-ctn">
+                    
+                    <div class="btn-action" onclick="rewind()">
+                        <div id="btn-faws-rewind">
+                        <i class='fas fa-backward smart'></i>
+                        </div>
+                    </div>
+                    <div class="btn-action smart" onclick="toggleAudio()">
+                        <div id="btn-faws-play-pause">
+                        <i class='fas fa-play' id="icon-play"></i>
+                        <i class='fas fa-pause' id="icon-pause" style="display: none"></i>
+                        </div>
+                    </div>
+                    <div class="btn-play smart" onclick="forward()">
+                        <div id="btn-faws-forward">
+                        <i class='fas fa-forward'></i>
+                        </div>
+                    </div>
+                    
+                    <div class="btn-mute smart" id="toggleMute" onclick="toggleMute(getElementById('volume').value)">
+                        <div id="btn-faws-volume">
+                        <i id="icon-vol-up" class='fas fa-volume-up'></i>
+                        <i id="icon-vol-mute" class='fas fa-volume-mute' style="display: none"></i>
+                        </div>
+                    </div>
+                    <input class="volume" id="volume" min="0" max="100" value="100" type="range" onchange="ChangeVolume(this.value)">
+
+                </div>
+                <div class="playlist-ctn"></div>
+                <script src=app.js></script>
+                </div>
+                
+
+            </div>
+        </main>
+    </div>
+
+    <script  src="./js/main.js"></script>
+</body>
+</html>
