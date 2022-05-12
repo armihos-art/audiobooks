@@ -30,6 +30,12 @@ function createTrackItem(index,name,duration){
 
 var listAudio = [
   {
+    name:"Вступление сборника",
+    file:"../audiobooks/audiobooks/000.mp3",
+    duration:"00:37",
+    image: "url(../audiobooks/images/bg1.jpg)"
+  },
+  {
     name:"Чехов А. П. - Смерть чиновника",
     file:"../audiobooks/audiobooks/1.mp3",
     duration:"00:28",
