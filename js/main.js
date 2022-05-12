@@ -42,7 +42,7 @@ var listAudio = [
     image: "url(../audiobooks/images/bg1.jpg)"
   },
   {
-    name:"Чехов А. П. - Лошадиные зубы",
+    name:"Чехов А. П. - Лошадиная фамилия",
     file:"https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3",
     duration:"05:53",
     image: "url(../audiobooks/images/bg2.jpg)"
