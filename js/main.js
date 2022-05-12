@@ -46,12 +46,6 @@ var listAudio = [
     file:"https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3",
     duration:"05:53",
     image: "url(../audiobooks/images/bg2.jpg)"
-  },
-  {
-    name:"Чехов А. П. - Дачники",
-    file:"../audiobooks/audiobooks/1.mp3",
-    duration:"00:28",
-    image: "url(../audiobooks/images/bg3.jpg)"
   }
 ]
 
